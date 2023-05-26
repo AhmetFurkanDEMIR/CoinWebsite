@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chef Pepe</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Chef Pepe aims to be one of the fastest growing communities in the crypto world. Chef Pepe is the next evolution of a reflection token on Arbitrum. 4% of every transaction is rewarded to $CPEPE holders. Just  hold $CPEPE and yield $ARB with each transaction. Start earning passive income automatically just by being a holder of Chef Pepe. Redistribution of $ARB goes directly into your wallet." />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/darkMode.bundle.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" />
+    <link rel="apple-touch-icon" href="img/icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon.png" />
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+      html {
+          scroll-behavior: smooth;
+      }
+
+
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.counter {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+
+
+i {
+  font-size: 50px;
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+.columns {
+  width: 10%;
+  min-width: 280px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  display: inline-block;
+ }
+
+
+
+/* Slider */
+.slick-slide {
+margin: 0px 50px;
+}
+.slick-slide img {
+width: 100%;
+}
+/*
+.slick-slider
+{
+position: relative;
+display: block;
+box-sizing: border-box;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-touch-callout: none;
+-khtml-user-select: none;
+-ms-touch-action: pan-y;
+touch-action: pan-y;
+-webkit-tap-highlight-color: transparent;
+} */
+.slick-list
+{
+position: relative;
+display: block;
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+.slick-list:focus
+{
+outline: none;
+}
+.slick-list.dragging
+{
+cursor: pointer;
+cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+position: relative;
+top: 0;
+left: 0;
+display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+display: table;
+content: '';
+}
+.slick-track:after
+{
+clear: both;
+}
+.slick-loading .slick-track
+{
+visibility: hidden;
+}
+.slick-slide
+{
+display: none;
+float: left;
+height: 100%;
+min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+float: right;
+}
+.slick-slide img
+{
+display: block;
+}
+.slick-slide.slick-loading img
+{
+display: none;
+}
+.slick-slide.dragging img
+{
+pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+display: block;
+}
+.slick-loading .slick-slide
+{
+visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+display: block;
+height: auto;
+border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+display: none;
+}
+
+.slide{
+
+    height: 80px;
+  width: 100%;
+  vertical-align: middle
+
+  display: inline-block;
+  position: relative;
+
+}
+
+.imgsl {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+    </style>
+
+
+  </head>
+  <body
+    class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+  >
+    <header class="js-page-header fixed top-0 z-20 w-full backdrop-blur transition-colors">
+      <div class="flex items-center px-6 py-6 xl:px-24">
+        <a href="index.html" class="shrink-0">
+          <div class="flex gap-3">
+            <img src="img/logo.png" class="max-h-7 dark:hidden" alt="ChefPepe" />
+            <img src="img/logo.png" class="hidden max-h-7 dark:block" alt="ChefPepe" />
+            <h1 class="dark:hidden" style="color:black; font-size:larger">Chef Pepe</h1>
+            <h1 class="hidden dark:block" style="color:aliceblue; font-size:larger">Chef Pepe</h1>
+          </div>
+        </a>
+        <div
+          class="js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent"
+        >
+          <div
+            class="t-0 dark:bg-jacarta-800 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 lg:hidden"
+          >
+            <a href="index.html" class="shrink-0 flex gap-3">
+              <img src="img/logo.png" class="max-h-7 dark:hidden" alt="ChefPepe" />
+              <img src="img/logo.png" class="hidden max-h-7 dark:block" alt="ChefPepe" />
+              <h1 class="dark:hidden" style="color:black; font-size:larger">Chef Pepe</h1>
+              <h1 class="hidden dark:block" style="color:aliceblue; font-size:larger">Chef Pepe</h1>
+            </a>
+            <button
+              class="js-mobile-close border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+              aria-label="close mobile menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="relative mt-24 mb-8 w-full lg:hidden"></div>
+          <nav class="navbar w-full">
+            <ul class="flex flex-col lg:flex-row">
+              <li class="group">
+                <a
+                  href="index.html"
+                  class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5"
+                  >Home</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#about"
+                  class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5"
+                  >About Us</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#roadmap"
+                  class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5"
+                  >Roadmap</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#cpepe"
+                  class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5"
+                  >$CPEPE</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#community"
+                  class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5"
+                  >Community</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="ml-8 hidden lg:flex xl:ml-12">
+            <a
+              href="#"
+              class="border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent js-dark-mode-trigger ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="fill-jacarta-700 dark-mode-light h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:hidden"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="fill-jacarta-700 dark-mode-dark hidden h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:block dark:fill-white"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="ml-auto flex lg:hidden">
+          <a
+            href="#"
+            class="js-dark-mode-trigger border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              class="fill-jacarta-700 dark-mode-light h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:hidden"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              class="fill-jacarta-700 dark-mode-dark hidden h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:block dark:fill-white"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
+              />
+            </svg>
+          </a>
+          <button
+            class="js-mobile-toggle border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+            aria-label="open mobile menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="relative pb-10 pt-20 md:pt-32 lg:h-[88vh]">
+        <picture class="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
+          <img src="img/gradient.jpg" alt="gradient" />
+        </picture>
+        <picture class="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block">
+          <img src="img/gradient_dark.jpg" alt="gradient dark" />
+        </picture>
+
+        <div class="container h-full">
+          <div class="grid h-full items-center gap-4 md:grid-cols-12">
+            <div
+              class="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4"
+            >
+              <h1
+                class="text-jacarta-700 font-display mb-6 text-center text-3xl dark:text-white md:text-left lg:text-6xl xl:text-7xl"
+              >
+               Chef Pepe is the most memeable memecoin in existence
+              </h1>
+              <div class="flex space-x-4">
+                <a
+                  onclick="window.open('https://opensea.io/collection/chef-pepe-og-nft/drop')"
+                  class="bg-accent shadow-accent-volume hover:bg-accent-dark rounded-full py-3 px-8 text-center font-semibold text-white transition-all cursor-pointer"
+                >
+                  Buy $CPEPE
+                </a>
+                <a
+                  href="./whitepaper/CPEPE_Whitepaper.pdf"
+                  class="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-36 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white"
+                >
+                  Whitepaper
+                </a>
+              </div>
+            </div>
+            <div class="col-span-6 xl:col-span-8">
+              <div class="relative text-center md:pl-8 md:text-right">
+                <svg
+                  viewbox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] xl:w-[35rem]"
+                >
+                  <defs>
+                    <clipPath id="clipping" clipPathUnits="userSpaceOnUse">
+                      <path
+                        d="
+                    M 0, 100
+                    C 0, 17.000000000000004 17.000000000000004, 0 100, 0
+                    S 200, 17.000000000000004 200, 100
+                        183, 200 100, 200
+                        0, 183 0, 100
+                "
+                        fill="#9446ED"
+                      ></path>
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#clipping)">
+                    <image href="img/hero/hero.png" width="200" height="200" clip-path="url(#clipping)" />
+                  </g>
+                </svg>
+                <img src="img/hero/3D_elements.png" alt="" class="animate-fly absolute top-0 md:-right-[10%]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-12 pb-24 lg:py-24 mt-10" id="counter">
+
+        <br></br>
+        <br></br>
+
+        <div class="row">
+
+
+
+          <h1
+                class="text-jacarta-700 font-display mb-6 text-xl dark:text-white lg:text-xl xl:text-xl"
+              >
+              <i class="fa-solid fa-hand-holding-dollar fa-beat fa-xs dark:text-white"></i> &nbsp;
+               Token Fees
+              </h1>
+
+      <div class="counter-container columns">
+    
+
+    <div class=" dark:text-white counter" data-target="4"></div>
+    <span class="dark:text-white">Reflection Fees</span>
+  </div>
+
+  <div class="counter-container columns">
+    <div class=" dark:text-white counter" data-target="1"></div>
+    <span class="dark:text-white">Buyback Fee</span>
+  </div>
+
+  <div class="counter-container columns">
+    <div class=" dark:text-white counter" data-target="2"></div>
+    <span class="dark:text-white">Liquidity Fee</span>
+  </div>
+
+  <div class="counter-container columns">
+    <div class=" dark:text-white counter" data-target="1"></div>
+    <span class="dark:text-white">Marketing Fee</span>
+  </div>
+
+
+  </div>
+
+  </section>
+
+      <section class="relative pt-12 pb-24 lg:py-24 mt-10" id="about">
+        <h2 class="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">
+          <span
+          class="animate-heartBeat mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl"
+          style="
+            background-image: url(https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/1f4a5.png);
+          "
+        ></span>
+          About Us
+        </h2>
+        <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+          <img src="img/gradient_light.jpg" alt="gradient" class="h-full" />
+        </picture>
+        <div class="container">
+          <div class="md:flex md:flex-wrap">
+            <figure class="mb-16 mt-16 md:w-2/5 md:flex-shrink-0 md:flex-grow-0 lg:w-1/2 about-logo">
+              <img
+                src="img/logo1.png"
+             
+                alt="item"
+                class=""
+              />
+            </figure>
+            <div class="md:w-3/5 md:basis-auto md:pl-8 lg:w-1/2 lg:pl-[3.75rem]">
+              <br></br>
+              <h1 class="font-display text-jacarta-700 mb-4 text-4xl font-semibold dark:text-white">Chef Pepe</h1>
+              <p class="dark:text-jacarta-300 mb-10">
+
+
+                Chef Pepe aims to be one of the fastest growing communities in the crypto world. Chef Pepe is the next evolution of a reflection token on Arbitrum. 4% of every transaction is rewarded to $CPEPE holders. Just  hold $CPEPE and yield $ARB with each transaction. Start earning passive income automatically just by being a holder of Chef Pepe. Redistribution of $ARB goes directly into your wallet.
+              </p>
+             
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dark:bg-jacarta-800 relative pb-5 pt-28" id="roadmap">
+        <h2 class="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">
+          <span
+          class="animate-heartBeat mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl"
+          style="
+            background-image: url(https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/1f525.png);
+          "
+        ></span>
+          Roadmap
+        </h2>
+        <div class="container">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 md:gap-[1.875rem]">
+            <a
+              class="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 mb-8 rounded-[1.25rem] border bg-white p-8 transition-shadow cursor-pointer"
+            >
+              <img
+                src="img/pepe/pepe1.png"
+
+                class="dark:border-jacarta-600 dark:bg-jacarta-700 border-jacarta-100 mx-auto mb-7 -mt-[3.5rem] h-[5.5rem] w-[5.5rem] rounded-full border bg-white"
+                alt="wallet"
+
+              />
+              <h3 class="font-display text-jacarta-700 mb-3 text-[1.125rem] dark:text-white text-center">Phase 1</h3>
+              <p class="dark:text-jacarta-300">
+                1. Contract Creation </br>
+                2. Design for Website/Social Media Accounts </br>
+                3. Creation of Whitepaper and Roadmap </br>
+                4. Deployment of website and social media accounts </br>
+                5. Listing on Uniswap</br>
+                6. Airdrop Campaign </br>
+                7. Apply for CoinMarketCap & CoinGecko </br>
+                8. Target at least 2500 Telegram Members & Twitter Followers 
+              </p>
+            </a>
+
+            <a
+              class="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 mb-8 rounded-[1.25rem] border bg-white p-8 transition-shadow cursor-pointer"
+            >
+              <img
+                src="img/pepe/pepe2.png"
+                class="dark:border-jacarta-600 dark:bg-jacarta-700 border-jacarta-100 mx-auto mb-7 -mt-[3.5rem] h-[5.5rem] w-[5.5rem] rounded-full border bg-white"
+                alt="wallet"
+              />
+              <h3 class="font-display text-jacarta-700 mb-3 text-[1.125rem] dark:text-white text-center">Phase 2</h3>
+              <p class="dark:text-jacarta-300">
+                1. Audit </br>
+                2. List on CoinGecko </br>
+                3. List on CoinMarketCap </br>
+                4. Influencers and marketing promotion </br>
+                5. Various Partnerships & Sponsorships </br>
+                6. Huge marketing campaign </br>
+                7. Giveaways for all holders </br>
+                8. 2500+ Holders 
+              </p>
+            </a>
+
+            <a
+              class="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 mb-8 rounded-[1.25rem] border bg-white p-8 transition-shadow cursor-pointer"
+            >
+              <img
+                src="img/pepe/pepe3.png"
+                class="dark:border-jacarta-600 dark:bg-jacarta-700 border-jacarta-100 mx-auto mb-7 -mt-[3.5rem] h-[5.5rem] w-[5.5rem] rounded-full border bg-white"
+                alt="wallet"
+              />
+              <h3 class="font-display text-jacarta-700 mb-3 text-[1.125rem] dark:text-white text-center">Phase 3</h3>
+              <p class="dark:text-jacarta-300">
+                1. Community Growth </br>
+                2. Cex Listing </br>
+                3. Chef Pepe NFT Collection </br>
+                4. Website Redesign </br>
+                5. 10000+ Holders </br>
+                6. Airdrop Mechanism 
+              </p>
+            </a>
+
+            <a
+              class="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 mb-8 rounded-[1.25rem] border bg-white p-8 transition-shadow cursor-pointer"
+            >
+              <img
+                src="img/pepe/pepe4.png"
+                class="dark:border-jacarta-600 dark:bg-jacarta-700 border-jacarta-100 mx-auto mb-7 -mt-[3.5rem] h-[5.5rem] w-[5.5rem] rounded-full border bg-white"
+                alt="wallet"
+              />
+              <h3 class="font-display text-jacarta-700 mb-3 text-[1.125rem] dark:text-white text-center">Phase 4</h3>
+              <p class="dark:text-jacarta-300">
+                1. Increased Marketing </br>
+                2. NFT Staking </br>
+                3. More Cex Listings </br>
+                4. More partnerships </br>
+                5. 25000+ Holders </br>
+                6. More Cex Listings
+              </p>
+            </a>
+          </div>
+         
+        </div>
+      </section>
+      <section class="dark:bg-jacarta-800 relative py-16 md:py-24" id="cpepe">
+        <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+          <img src="img/gradient_light.jpg" alt="gradient" class="h-full w-full" />
+        </picture>
+        <div class="container">
+          <h2 class="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">
+            <span
+            class="animate-heartBeat mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl"
+            style="
+              background-image: url(./img/logo1.png);
+            "
+          ></span>
+            $CPEPE
+          </h2>
+          <div class="article-content mx-auto max-w-[48.125rem]">
+            <h2 class="text-base">What we aim as Chef Pepe team?</h2>
+            <p>
+              Our first goal is to become one of the important meme tokens of Arbitrum. Then we aim to be known all over the world.
+            </p>
+            <h2>What will be the rewards of NFT Staking?</h2>
+
+            <p>
+              NFT Stakers will receive $CPEPE as rewards and 50% of royalty fees will be distributed to NFT Stakers and 25% of royalty fees will be distributed to NFT Holders. The remaining 25% will be used for marketing and ecosystem expansion.
+            </p>
+
+            <h2>What is Airdrop Mechanism?</h2>
+
+            <p>
+              We will reward our long-term holders with snapshots we take on random dates.
+            </p>
+
+            <h2>Token Distribution</h2>
+
+            <p>Maximum Supply : 100,000,000,000,000</p>
+
+            <img src="img/tokenomics.png" alt="gradient" class="h-full w-full"/>
+
+            <p>
+              We chose to be community friendly while doing the tokenomics of Chef Pepe. Our community always comes first. 
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative py-24" id="logos">
+
+        <div class="container">
+   
+           <section class="logos-slider slider">
+              <div class="slide"><img src="img/ref/dark_1.png" id="slide1" class="imgsl"></div>
+              <div class="slide"><img src="img/ref/dark_2.png" id="slide2" class="imgsl"></div>
+              <div class="slide"><img src="img/ref/dark_3.png" id="slide3" class="imgsl"></div>
+              <div class="slide"><img src="img/ref/dark_4.png" id="slide4" class="imgsl"></div>
+              <div class="slide"><img src="img/ref/dark_5.png" id="slide5" class="imgsl"></div>
+              <div class="slide"><img src="img/ref/dark_6.png" id="slide5" class="imgsl"></div>
+              <div class="slide"><img src="img/ref/dark_7.png" id="slide5" class="imgsl"></div>
+
+           </section>
+          
+        </div>
+
+    </section>
+
+
+      <section class="relative py-24" id="community">
+        <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+          <img src="img/gradient_light.jpg" alt="gradient" class="h-full w-full" />
+        </picture>
+        <div class="container">
+          <h2 class="font-display text-jacarta-700 mb-8 text-center text-3xl dark:text-white">
+            <span
+              class="animate-heartBeat mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl"
+              style="
+                background-image: url(https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/2764-fe0f.png);
+              "
+            ></span>
+            Community
+          </h2>
+
+          <div class="flex flex-wrap gap-12 justify-center">
+            <div class="w-36">
+              <article>
+                <div
+                  class="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 text-center rounded-[1.25rem] border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg cursor-pointer"
+                  onclick="window.open('https://twitter.com/ChefPepeARB')"
+                >
+                  <a href="#" class="flex justify-center align-center mb-7">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="twitter"
+                      class="group-hover:fill-accent fill-jacarta-300 h-12 w-12 dark:group-hover:fill-white"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <h2 class="font-display text-jacarta-700 text-center text-lg dark:text-white">Twitter</h2>
+                </div>
+              </article>
+            </div>
+            <div class="w-36">
+              <article>
+                <div
+                  class="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 text-center rounded-[1.25rem] border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg cursor-pointer"
+                  onclick="window.open('https://t.me/ChefPepeARB')"
+                >
+                  <a href="#" class="flex justify-center align-center mb-7">
+                    <svg
+                      class="bi bi-telegram group-hover:fill-accent fill-jacarta-300 h-12 w-12 dark:group-hover:fill-white"
+                      width="12"
+                      height="12"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg>
+                  </a>
+                  <h2 class="font-display text-jacarta-700 text-center text-lg dark:text-white">Telegram</h2>
+                </div>
+              </article>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.bundle.js"></script>
+
+    <script src="./js/counter.js"></script>
+
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
