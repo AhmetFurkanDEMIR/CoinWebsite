@@ -1,3 +1,3 @@
 # CoinWebsite
 
-[**chefpepe**](https://www.chefpepe.xyz/)
+[**chefpepe**](https://chefpepe.xyz/)
